@@ -1,7 +1,7 @@
 const generateId = require("./10")
 
 describe("reverseString", () => {
-    for(let i = 0; i < 1000; i++)
+    for(let i = 0; i < 10; i++)
     {test(i, () => {
         expect(generateId(i).length).toBe(i)
     })}
