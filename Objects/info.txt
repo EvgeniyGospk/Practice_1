@@ -1,0 +1,6 @@
+Object.keys(obj) - возвращает массив всех ключей объекта
+Object.values(obj) - возвращает массив всех значений объекта
+Object.entities(obj) - возвращает массив пар [ключ, значение]
+Object.assign(target, ...sources) - копирует все свойства объектов sources в target
+Object.fromEntities(iterable) - преобразует массив пар [ключ, значение] в объект
+obj.hasOwnProperty(key) - проверяется есть ли у объекта ключ

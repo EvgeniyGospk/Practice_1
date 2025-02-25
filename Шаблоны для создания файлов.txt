@@ -1,0 +1,10 @@
+1..15 | ForEach-Object { New-Item -Name "$_.js" -ItemType File -Value "`n`nmodule.exports =" } 
+.js
+
+1..15 | ForEach-Object { 
+    $i = $_
+    New-Item -Name "$_.test.js" -ItemType File -Value "const value = require(`"./$i`")`n`ndescribe(`"value`", () => {`n    test(`"1`", () => {`n        expect(value())`n    })`n`n    test(`"2`", () => {`n        expect(value())`n    })`n`n    test(`"3`", () => {`n        expect(value())`n    })`n`n    test(`"4`", () => {`n        expect(value())`n    })`n`n    test(`"5`", () => {`n        expect(value())`n    })`n})"
+}
+
+test.js
+Cypress
